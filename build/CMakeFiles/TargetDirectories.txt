@@ -1,0 +1,4 @@
+/Users/harmanbhogal/vcs/build/CMakeFiles/vcs.dir
+/Users/harmanbhogal/vcs/build/CMakeFiles/run.dir
+/Users/harmanbhogal/vcs/build/CMakeFiles/edit_cache.dir
+/Users/harmanbhogal/vcs/build/CMakeFiles/rebuild_cache.dir

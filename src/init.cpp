@@ -2,7 +2,7 @@
 #include <fstream>
 bool init(){
     std::filesystem::create_directory(".vcs");
-    std::filesystem::create
+ 
     
 
 }
