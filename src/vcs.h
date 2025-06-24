@@ -1,10 +1,13 @@
 #pragma once
+#include <string>
 class Vcs
 {
 private:
     /* data */
 public:
-    Vcs(/* args */);
+    void add(const std::string& filename);
+
+
     
     
 };
