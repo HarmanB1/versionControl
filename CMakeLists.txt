@@ -10,8 +10,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 add_executable(vcs
     src/main.cpp
-    src/init.cpp
     src/vcs.cpp
+)
+target_include_directories(vcs
+    PRIVATE ${CMAKE_SOURCE_DIR}/src
 )
 
 

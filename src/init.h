@@ -2,7 +2,7 @@
 #include <iostream>
 #include <fstream>
 
-bool init(){
+inline bool init(){
     std::filesystem::create_directory(".vcs");
     std::filesystem::create_directory(".vcs/objects");
     std::filesystem::create_directory(".vcs/refs");
@@ -13,6 +13,8 @@ bool init(){
     head.close();
 
     std::cout << "initializae empty vcs repo\n";
+
+    return true;
 
  
     

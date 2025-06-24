@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/harmanbhogal/vcs/src/init.cpp" "CMakeFiles/vcs.dir/src/init.cpp.o" "gcc" "CMakeFiles/vcs.dir/src/init.cpp.o.d"
   "/Users/harmanbhogal/vcs/src/main.cpp" "CMakeFiles/vcs.dir/src/main.cpp.o" "gcc" "CMakeFiles/vcs.dir/src/main.cpp.o.d"
   "/Users/harmanbhogal/vcs/src/vcs.cpp" "CMakeFiles/vcs.dir/src/vcs.cpp.o" "gcc" "CMakeFiles/vcs.dir/src/vcs.cpp.o.d"
   )

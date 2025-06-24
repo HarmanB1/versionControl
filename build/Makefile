@@ -142,30 +142,6 @@ run/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
 .PHONY : run/fast
 
-src/init.o: src/init.cpp.o
-.PHONY : src/init.o
-
-# target to build an object file
-src/init.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vcs.dir/build.make CMakeFiles/vcs.dir/src/init.cpp.o
-.PHONY : src/init.cpp.o
-
-src/init.i: src/init.cpp.i
-.PHONY : src/init.i
-
-# target to preprocess a source file
-src/init.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vcs.dir/build.make CMakeFiles/vcs.dir/src/init.cpp.i
-.PHONY : src/init.cpp.i
-
-src/init.s: src/init.cpp.s
-.PHONY : src/init.s
-
-# target to generate assembly for a file
-src/init.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vcs.dir/build.make CMakeFiles/vcs.dir/src/init.cpp.s
-.PHONY : src/init.cpp.s
-
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -224,9 +200,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... run"
 	@echo "... vcs"
-	@echo "... src/init.o"
-	@echo "... src/init.i"
-	@echo "... src/init.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

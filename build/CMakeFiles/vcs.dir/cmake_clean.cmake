@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/vcs.dir/src/init.cpp.o"
-  "CMakeFiles/vcs.dir/src/init.cpp.o.d"
   "CMakeFiles/vcs.dir/src/main.cpp.o"
   "CMakeFiles/vcs.dir/src/main.cpp.o.d"
   "CMakeFiles/vcs.dir/src/vcs.cpp.o"
