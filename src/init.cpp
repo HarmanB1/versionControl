@@ -2,6 +2,11 @@
 #include <fstream>
 bool init(){
     std::filesystem::create_directory(".vcs");
+    std::filesystem::create_directory(".vcs/objects");
+    std::filesystem::create_directory(".vcs/refs");
+    std::filesystem::create_directory(".vcs/refs/heads");
+
+
  
     
 
