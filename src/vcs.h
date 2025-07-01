@@ -5,7 +5,8 @@ class Vcs
 private:
     /* data */
 public:
-    void add(const std::string& filename);
+    static void add(const std::string& filename);
+    static bool init();
 
 
     
