@@ -5,13 +5,15 @@ if [[ $1 == "k" ]]; then
     cd build && rm -rf .vcs
 else 
     echo "building"
-    cd build && make clean && make && chmod +x ./vcs
-    if[[ $1 == "init"]]; then
+    cd build && make clean && make 
+    if [[ $1 == "init" ]]; then
         echo "status init"
-        vcs init
-    if[[ $1 == "init"]]; then
-        echo "status init"
-        vcs add file1
+        ./vcs init
+    elif [[ $1 == "add" ]]; then
+        echo "status add"
+        ./vcs add file1
+
+    fi
     cd ..
 fi
 
