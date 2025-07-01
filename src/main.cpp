@@ -1,8 +1,10 @@
 #include <iostream>
+
 #include "vcs.h"
 #include <unordered_map>
 #include <vector>
 #include <functional>
+
 
 
 
@@ -19,8 +21,8 @@ int main(int args, char* argv[]){
    }
 
    std::unordered_map<std::string, std::function<void(const std::vector<std::string>&)>> comands ={
-    {"init", Vcs::init},
-    {"add", Vcs::add},
+    {"init", [](const std::vector<std::string>& args){Vcs::init();}},
+    {"add", [](const std::vector<std::string>& args){Vcs::add(args[0]);}},
    };
 
    
