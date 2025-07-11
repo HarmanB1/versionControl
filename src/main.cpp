@@ -17,12 +17,12 @@ int main(int args, char* argv[]){
 
    for(int i=1; i< args; i++){
     //auto convert char* to string
-    terminalArguements.push_back(argv[i]);
+        terminalArguements.push_back(argv[i]);
    }
 
    std::unordered_map<std::string, std::function<void(const std::vector<std::string>&)>> commands ={
-    {"init", [](const std::vector<std::string>& args){Vcs::init();}},
-    {"add", [](const std::vector<std::string>& args){Vcs::add(args[0]);}},
+        {"init", [](const std::vector<std::string>& args){Vcs::init();}},
+        {"add", [](const std::vector<std::string>& args){Vcs::add(args[0]);}},
    };
 
    auto it = commands.find(terminalArguements.at(0));

@@ -3,17 +3,36 @@
 #include <filesystem>
 #include <fstream>
 #include <iostream>
+#include <vector>
+
+#include <openssl/shah.h> //opnseel sha-256
 
 
-void Vcs::add(const std::string& filename){
-    if(!std::filesystem::exists(filename)){
-        std::cerr << "Error: " << filename << "does not exist" << std::endl;
-        return;
+std::string sha256(const std::string& data){
+    
+}
+
+void Vcs::add(const std::vector<std::string>& args){
+    if(args.size()<2){
+        std::cerr << "Error, no files provided" << std::endl;
+        
+    }
+    std::filesystem::create_directory(".vcs/index");
+    for(int i=1; i< args.size(); i++){
+        std::string filename = args.at(i);
+        if(!std::filesystem::exists(filename)){
+            std::filesystem::remove_all(".vcs.index");
+            std::cerr << "Error: " << args.at(1) << "does not exist" << std::endl;
+            return;
+        }
+        std::filesystem::copy(filename, ".vcs/index/"+ filename);
 
     }
+    
+   
 
-    std::filesystem::create_directory(".vcs/index");
-    std::filesystem::copy(filename, ".vcs/index/"+ filename);
+    
+    
     std::cout << "staged "<< filename<<std::endl;
 
 }
